@@ -5,5 +5,5 @@
   
   
  <h2> Autores </h2>
- <a href="github.com/augustolumes" target="_blanck" rel="author"> Augusto Lumes </a><br/>
- <a href="github.com/rodrigogama-4" target="_blanck" rel="author"> Rodrigo Gama </a>
+ <a href="https://github.com/augustolumes" target="_blanck" rel="author"> Augusto Lumes </a><br/>
+ <a href="https://github.com/rodrigogama-4" target="_blanck" rel="author"> Rodrigo Gama </a>
