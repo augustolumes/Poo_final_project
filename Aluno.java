@@ -1,31 +1,30 @@
-public class Aluno {
-    private String name;
-    private double id;
+import java.util.ArrayList;
+import java.util.List;
 
-    public Aluno(String name, double id) {
-        this.name = name;
-        this.id = id;
+public class Aluno extends Pessoa{
+    List<DisciplinaAluno> disciplinaAlunos = new ArrayList<>();
+
+    public void addDisciplina(DisciplinaAluno disciplinaAdd){
+        disciplinaAlunos.add(disciplinaAdd);
     }
 
-    public String getName() {
-        return name;
+    public Aluno(String nome, String cpf, boolean status) {
+        super(nome, cpf, status);
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public double getId() {
-        return id;
-    }
-
-    public void setId(double id) {
-        this.id = id;
-    }
 
     @Override
-    public String toString() {
-        return String.format("Name: %s\n\t - Id: %.2f", name, id);
+    public String toString(){
+
+        String cont = " ";
+        
+
+        for (DisciplinaAluno materias : disciplinaAlunos) {
+            cont += materias + "\n";
+        }
+        return "Nome: " + getNome() + ", CPF: " + getCpf() + ", Status: " + isStatus() + "\n" + cont;
     }
+
 
 }
